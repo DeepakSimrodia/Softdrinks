@@ -1,0 +1,30 @@
+<%- include('./partials/header') %>
+
+<div class="container w-100 d-flex flex-column align-items-center mt-5 h-75" style="background-image: url(https://images.unsplash.com/photo-1579488016412-273f94b0b453?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1982&q=80); background-size: contain; background-repeat: no-repeat; background-position: center;">
+    <img src="/images/assets/images-removebg-preview (5).png" alt="" srcset="" width="150px">
+    <h3>FORGET PASSWORD PAGE</h3><br>
+    <!-- <form action="/send-mail" method="post" class="d-flex flex-column align-items-center w-75">
+        <input type="email" placeholder="Enter Your Registered Email" name="email" class="mb-3 w-50 p-2 rounded border">
+        <input type="password" placeholder="New Password" name="password" class="mb-3 w-50 p-2  rounded border">        
+        <button class="btn btn-primary w-50 mb-2">Next</button>
+      </form> -->
+      <form 
+action="/send-mail" 
+method="post"
+class="d-flex flex-column align-items-center w-75"
+>
+
+<input 
+type="email" 
+name="email" 
+placeholder="Enter your email"
+class="mb-3 w-50 p-2 rounded border"
+>
+
+<button class="btn btn-primary w-25" >Send mail</button>
+<a class="btn text-primary" href="/"><u>Home</u></a>
+</form>
+</div>
+
+<%- include('./partials/footer') %>
+

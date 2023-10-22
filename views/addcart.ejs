@@ -1,0 +1,28 @@
+<%- include('./partials/header') %>
+
+
+<% if(task==0){ %>
+  <span class="text-danger container fs-5">Empty Cart</span>
+  <% } %>
+  <% task.forEach(function(taskloop){ %>
+      <div class="container d-flex align-items-center justify-content-between border rounded mt-5 w-50">
+        <div class="productImage">
+          <img src="" alt="" srcset="<%= taskloop.productImg %>" height="150px" width="150px">
+        </div>
+        
+        <div class="productInformation">
+          <input type="text" value="<%= taskloop.productName %>" disabled=true name="productName" class="cartInput"><br>
+          <h3>
+            <input type="text" value="<%= taskloop.productPrize %>" disabled=true name="productPrize" class="cartInput">
+          </h3>
+          <button class="btn btn-warning p-1">Buy Now</button>
+        </div>
+        <a href="/del/<%= taskloop.id %>" class="btn">❌</a>
+      </div>
+    <% }) %>
+
+
+
+
+
+      <%- include('./partials/footer') %>

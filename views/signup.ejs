@@ -1,0 +1,16 @@
+<%- include('./partials/header') %>
+
+
+<div class="container w-100 d-flex flex-column align-items-center mt-5 h-75" style="background-image: url(https://images.unsplash.com/photo-1579488016412-273f94b0b453?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1982&q=80); background-size: contain; background-repeat: no-repeat; background-position: center;">
+  <img src="/images/assets/images-removebg-preview (5).png" alt="" srcset="" width="15%">
+  <h3>SIGNUP PAGE</h3>
+  <form action="/signup" method="post" class="d-flex flex-column align-items-center w-75">
+      <input type="text" placeholder="Username" name="username" class="mb-3 w-50 p-2  rounded border">
+      <input type="email" placeholder="example@gmail.com" name="email" class="mb-3 w-50 p-2 rounded border">
+      <input type="number" placeholder="Contact" name="contact" class="mb-3 w-50 p-2  rounded border">
+      <!-- <input type="text" placeholder="Address" name="address" class="mb-3 w-50 p-2 rounded border"> -->
+      <input type="password" placeholder="********" name="password" class="w-50 mb-3 p-2 rounded border ">
+      <button class="btn btn-primary w-50 mb-2">Signup</button>
+    </form>
+</div>
+<%- include('./partials/footer') %>

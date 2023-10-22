@@ -1,0 +1,28 @@
+<%- include('./partials/header') %>
+
+<div class="container d-flex flex-column h-100 mt-4 profile">
+    <div class="profileImg d-flex align-items-center">
+        <img src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-user-vector-avatar-png-image_4830521.jpg" alt="" width="10%" style="border-radius: 50%; border: 2px solid black;">
+        <a href="/addcart" class="btn text-warning p-1 ms-5">Your Carts</a>
+        <a href="/logout" class="btn text-danger">Logout</a>
+        <a href="/reset-password" class="btn text-danger">Reset Password</a>
+    </div>
+    <form action="/updateuser/<%=user._id%>" method="post" class="d-flex flex-column justify-content-between h-75 mt-2">
+    <h3>User Profile</h3>
+    <span>Username</span>
+    <input type="text" class="w-50" name="username" value="<%= user.username %>">
+    <span>Email</span>
+    <input type="email" class="w-50" name="email" value="<%= user.email %>">
+    <span>Contact</span>
+    <input type="text" class="w-50" name="contact" value="<%= user.contact %>">
+    <span>Address</span>
+    <input type="text" class="w-50" name="address" value="<%= user.address %>">
+        <button class="btn btn-primary w-25">update</button>
+</form>
+</div>
+
+
+
+
+
+<%- include('./partials/footer') %>

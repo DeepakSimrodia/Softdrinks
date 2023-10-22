@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+
+}
+#homePageBG{
+  background-image: url(https://i.imgflip.com/r16ga.jpg);
+  width: 100%;
+  height: 90%;
+  background-size: contain; background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#homePageBG h1,p{
+  background-color: rgba(128, 128, 128, 0.245);
+  padding: 5px;
+}
+form p{
+  background-color: transparent;
+}
+.carousel-control-next-icon{
+  background-color: gray;
+}
+.carousel-control-prev-icon{
+  background-color: gray;
+}
+
+@media (max-width:600px) {
+  .productInfo span{
+    font-size: 1.1vmax;
+  }
+  .productInfo h6{
+    font-size: 1.5vmax;
+  }
+}
+
+
+.product{
+  width: 100%;
+  height: 35%;
+  display: flex;
+  border: 1px solid gray;
+}
+.productImg{
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid gray;
+  position: relative;
+}
+.productInfo{
+  width:75%;
+  height: 100%;
+  padding: 1%;
+}
+.productInfo p{
+  font-size: 1vmax;
+  width: 100%;
+}
+.productImg img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  height: 80%;
+}
+.product:hover{
+  box-shadow: 0px 0px 10px black;
+}
+.cartInput{
+  border: none;
+  outline: none;
+}
+
+
+
+.wine{
+  width: 100%;
+  height: 60%;
+  display: flex;
+}
+.wineImg{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wineInfo{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.wineInfo p{
+  width: 80%;
+  background-color: transparent;
+}
+.history{
+  width: 100%;
+  height: 70%;
+  background-image: url(https://images.unsplash.com/photo-1496318447583-f524534e9ce1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1868&q=80);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white;
+
+}
+.profile span{
+  font-size: 1.5vmax;
+  font-weight: 500;
+}
+.profile input{
+  padding: .5%;
+  border-radius: 10px;
+}
+#followUs{
+  width: 100%;
+  height: 20vh;
+  background-color: #bbb9b9;
+  color: #fff;
+  font-family: montserrat;
+  text-align: center;
+  padding: 2%;
+}
+#followUs .ri-instagram-line,.ri-facebook-fill,.ri-whatsapp-line{
+  margin-right: 35px;
+  cursor: pointer;
+  margin-left: 35px;
+}
+.ri-instagram-line:hover{
+  color:#FFC107;
+}
+.ri-facebook-fill:hover{
+  color:#FFC107;
+}
+.ri-whatsapp-line:hover{
+  color:#FFC107;
+}
+.card{
+  width: 10rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  transform: .50s;
+}
+.library{
+  padding: 1% 2%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
